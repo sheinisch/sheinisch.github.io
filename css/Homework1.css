@@ -1,0 +1,27 @@
+body{
+	background-color: #FFE87C;
+}
+img{
+	float: right;
+	margin: 0 30px 0 0;
+}
+p{
+	
+}
+h1{
+	color: navy;
+	
+}
+h5{
+	font-weight: bold;
+}
+.contact_info {
+	display: inline-block;
+	background-color: #E9AB17;
+}
+.col-sm-6{
+	background-color: #B5A642;
+}
+.col-sm-7{
+	background-color: #E56717;
+}
