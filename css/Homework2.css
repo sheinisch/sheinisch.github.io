@@ -1,0 +1,19 @@
+body{
+
+}
+h1 {
+	text-align: center;
+	border-style: solid;
+    
+}
+table, th, td {
+    border: 1px solid black;
+	border-collapse: separate;
+}
+table{
+	background-color: silver;
+	
+}
+th{
+	background-color: #4CC417;
+}
