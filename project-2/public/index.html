@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Forum</title>
+    <!-- Bootstrap CSS, Optional Theme, and Custom CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid fill">
+        <div class="welcome panel panel-primary">
+          <div class="panel-heading content-heading login_content">Join the discussion...</div>
+          <div class="panel-heading content-heading forum_content"><span class="new_response">+</span></div>
+          <div class="panel-body content">
+            <div class="login login_content">
+              <form name="addUser" id="addUser" class="form-horizontal" role="form">
+                <input type="text" name="name" id="name" class="form-control text-input" placeholder="nickname...">
+                <input type="submit" name="submit" id="submit" class="btn btn-primary" value="Let me in!">
+              </form>
+            </div>
+            <div class="forum_content">
+              <div class="btn-group btn-group-justified">
+                <a href="#" class="btn btn-success forum">Sports</a>
+                <a href="#" class="btn btn-danger forum">Politics</a>
+                <a href="#" class="btn btn-warning forum">General</a>
+              </div>
+              <div class="info-bar"></div>
+              <div class="post_container">
+                <div id="sports" class="list-group posts"></div>
+                <div id="politics" class="list-group posts"></div>
+                <div id="general" class="list-group posts"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>

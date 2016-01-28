@@ -1,0 +1,134 @@
+html, body {
+  background-color: #EFEFEF;
+  height: 100%;
+}
+
+.vertical-center {
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: -webkit-flex; /* For Safari */
+  -webkit-justify-content: center; /* For Safari */
+  -webkit-align-items: center; /* For Safari */
+}
+
+.login {
+  padding-left: 26px;
+  padding-right: 26px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+.text-input {
+  margin-bottom: 5px;
+}
+
+.fill {
+  padding: 0px;
+  height: 100%;
+}
+
+.new_response {
+  position: relative;
+  font-size: 42px;
+  line-height: 18px;
+  font-weight: bold;
+  top: 4px;
+  text-shadow: 1px 1px 1px #2b2b2b;
+  padding-left: 14px;
+  padding-right: 14px;
+  left: -12px;
+  cursor: pointer;
+}
+
+blockquote {
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+.content {
+  margin: 0;
+  padding: 0;
+}
+
+.sports-bar {
+  background-color: #5cb85c;
+}
+
+.politics-bar {
+  background-color: #d9534f;
+}
+
+.general-bar {
+  background-color: #f0ad4e;
+}
+
+.forum {
+  border-radius: 0px !important;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  text-shadow: 0px 1px 1px #2b2b2b;
+	color: #FDFDFD;
+}
+
+.info-bar {
+  min-height: 7px;
+  min-width: 100%;
+  background-color: #5cb85c;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+}
+
+.posts {
+  margin-bottom: 0px !important;
+}
+
+.author {
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 4px;
+  vertical-align: sub;
+}
+
+.post_time {
+  color: gray;
+  font-size: 12px;
+  vertical-align: sub;
+  margin-left: 2px;
+}
+
+.thread_post {
+  display: block;
+}
+
+.thread_content {
+  display: none;
+}
+
+
+@media screen and (min-width: 980px) /* Desktop */ {
+  .fill {
+    width: 70%;
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 500px) /* Mobile */ {
+  .welcome {
+    height: 100%;
+    margin: 0px;
+    overflow-y: scroll;
+  }
+
+  .forum {
+    height: 50px;
+  }
+}
